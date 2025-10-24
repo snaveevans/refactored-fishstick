@@ -1,19 +1,19 @@
 {
   "name": "@snaveevans/refactored-fishstick",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     },
-    "./Button": {
-      "types": "./dist/Button.d.ts",
-      "import": "./dist/Button.js"
+    "./*": {
+      "types": "./dist/*/index.d.ts",
+      "import": "./dist/*/index.js"
     },
-    "./Textfield": {
-      "types": "./dist/Textfield/index.d.ts",
-      "import": "./dist/Textfield/index.js"
+    "./*.js": {
+      "types": "./dist/*.d.ts",
+      "import": "./dist/*.js"
     }
   },
   "types": "./dist/index.d.ts",
