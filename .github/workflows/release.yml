@@ -43,7 +43,7 @@ jobs:
         run: |
           RELEASE_TAG=${GITHUB_REF#refs/tags/}
           PACKAGE_VERSION="${{ steps.package-version.outputs.version }}"
-          if [ "v$PACKAGE_VERSION" != "$RELEASE_TAG" ]; then
+          if [ "$PACKAGE_VERSION" != "$RELEASE_TAG" ]; then
             echo "Error: Release tag ($RELEASE_TAG) does not match package.json version (v$PACKAGE_VERSION)"
             exit 1
           fi
