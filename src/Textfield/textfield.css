@@ -1,0 +1,55 @@
+.demo-textfield-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.demo-textfield-label {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.demo-textfield {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: text;
+  display: inline-block;
+  line-height: 1;
+  padding: 0.75rem 1rem;
+  transition: all 0.2s ease;
+}
+
+.demo-textfield:hover:not(:disabled) {
+  border-color: #999;
+}
+
+.demo-textfield:focus {
+  outline: none;
+  border-color: #1ea7fd;
+  box-shadow: 0 0 0 2px rgba(30, 167, 253, 0.2);
+}
+
+.demo-textfield:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  background-color: #f5f5f5;
+}
+
+.demo-textfield--small {
+  font-size: 12px;
+  padding: 0.5rem 0.75rem;
+}
+
+.demo-textfield--medium {
+  font-size: 14px;
+  padding: 0.75rem 1rem;
+}
+
+.demo-textfield--large {
+  font-size: 16px;
+  padding: 1rem 1.25rem;
+}
