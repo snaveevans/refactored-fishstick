@@ -35,3 +35,5 @@ export const Textfield = ({
     </div>
   );
 };
+
+export default Textfield;
