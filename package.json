@@ -48,5 +48,8 @@
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0"
   },
-  "private": true
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "private": false
 }
